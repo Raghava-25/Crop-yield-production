@@ -88,4 +88,4 @@ if st.button('Predict'):
     st.success(f"The recommended crop for your conditions is: **{prediction[0]}** tons 🌾")
     # st.balloons()
 # Footer
-st.markdown("<p style='text-align:center; color:#888888; margin-top:50px;'>🌱 Powered by Smart Agriculture Solutions</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:#888888; margin-top:50px;'>🌱 Powered by CSM students (RJHD)</p>", unsafe_allow_html=True)
