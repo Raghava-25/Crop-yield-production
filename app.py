@@ -21,18 +21,16 @@ except Exception as e:
     st.stop()
 
 # Encode categories
-states = ["Andhra Pradesh", "Assam", "Bihar", "Chhattisgarh", "Chandigarh"]
+states = ["Andhra Pradesh", "Assam", "Bihar", "Chhattisgarh", "Delhi"]
 seasons = ["Kharif", "Rabi", "Whole Year", "Summer", "Winter", "Autumn"]
 crops = ["Rice", "Wheat", "Maize", "Barley", "Soybean", "Banana", "Sugarcane", "Turmeric"]
 
 district_map = {
-    "Andaman and Nicobar Islands": ["Nicobar", "North and Middle Andaman", "South Andaman"],
-    "Andhra Pradesh": ["Anantapur", "Chittoor", "East Godavari", "Guntur", "Kadapa", "Krishna", "Kurnool"],
-    "Arunachal Pradesh": ["Anjaw", "Changlang", "Dibang Valley", "East Kameng", "East Siang"],
-    "Assam": ["Baksa", "Barpeta", "Biswanath", "Bongaigaon", "Cachar"],
-    "Bihar": ["Araria", "Arwal", "Aurangabad", "Banka", "Begusarai"],
-    "Chandigarh": ["Chandigarh"],
-    "Chhattisgarh": ["Balod", "Baloda Bazar", "Balrampur", "Bastar", "Bemetara"]
+    "Andhra Pradesh": ["ANANTAPUR", "CHITTOOR", "EAST GODAVARI", "GUNTUR", "KADAPA"],
+    "Assam": ["Baksa", "Barpeta"],
+    "Bihar": ["Araria", "Arwal"],
+    "Chhattisgarh": ["Balod", "Bastar"],
+    "Delhi": ["Central Delhi", "East Delhi"]
 }
 
 label_encoders = {category: LabelEncoder() for category in ["State", "District", "Season", "Crop"]}
@@ -145,7 +143,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Main Title and Description
-st.markdown("<h1 class='title'>🌾 Crop Yield Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌾 Smart Crop Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<p class='sub-title'>Predict the best crop yield based on your location and environmental factors.</p>", unsafe_allow_html=True)
 
 # Enhanced Information Box (Styled & Aligned)
