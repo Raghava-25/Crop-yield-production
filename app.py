@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Load Model
 try:
-    model = joblib.load('crop_yield_prediction_model.pkl')
+    model = joblib.load('crop_production_model.pkl')
 except Exception as e:
     st.error(f"Error loading model: {e}")
     st.stop()
