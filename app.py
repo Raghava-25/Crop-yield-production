@@ -7,7 +7,7 @@ import time
 
 # Page Configuration
 st.set_page_config(
-    page_title="Smart Crop Predictor",
+    page_title="Crop Yield Predictor",
     page_icon="🌾",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -143,7 +143,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Main Title and Description
-st.markdown("<h1 class='title'>🌾 Smart Crop Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌾 Crop Yield Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<p class='sub-title'>Predict the best crop yield based on your location and environmental factors.</p>", unsafe_allow_html=True)
 
 # Enhanced Information Box (Styled & Aligned)
