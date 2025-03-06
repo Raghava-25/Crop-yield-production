@@ -7,7 +7,7 @@ import time
 
 # Page Configuration
 st.set_page_config(
-    page_title="Crop Yield Predictor",
+    page_title="FarmCast AI",
     page_icon="🌾",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -143,8 +143,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Main Title and Description
-st.markdown("<h1 class='title'>🌾 Crop Yield Predictor</h1>", unsafe_allow_html=True)
-st.markdown("<p class='sub-title'>Predict the best crop yield based on your location and environmental factors.</p>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌾 FarmCast AI</h1>", unsafe_allow_html=True)
+st.markdown("<p class='sub-title'>Predicts the best crop yield based on your location and environmental factors.</p>", unsafe_allow_html=True)
 
 # Enhanced Information Box (Styled & Aligned)
 st.markdown(
@@ -184,8 +184,8 @@ st.markdown(
     </style>
 
     <div class='info-box'>
-        <div class='info-title'>🌾 Crop Yield Predictor – ML-Powered Yield Estimator</div>
-        <p>Welcome to <b class='highlight'>Crop Yield Predictor</b>, an advanced <b>Machine Learning (ML)</b> application designed to help farmers, researchers, and agronomists make data-driven crop yield predictions.</p>
+        <div class='info-title'>🌾 FarmCast AI – ML-Powered Yield Estimator</div>
+        <p>Welcome to <b class='highlight'>FarmCast AI</b>, an advanced <b>Machine Learning (ML)</b> application designed to help farmers, policy makers, researchers, and agronomists make data-driven crop yield predictions.</p>
         <div class='info-section'>🚀 Key Features</div>
         <ul class='info-list'>
             <li>✅ <b>State & District:</b> Location-based crop productivity insights.</li>
@@ -279,4 +279,4 @@ if st.button('🚜 Predict Crop Yield', key="predict_main"):
 
 
 # Footer
-st.markdown("<p style='text-align:center; color:#888888; margin-top:30px;'>🌱 Developed by RJHV</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:#888888; margin-top:30px;'>🌱 Developed by RJHV © 2025</p>", unsafe_allow_html=True)
