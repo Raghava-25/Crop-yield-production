@@ -184,8 +184,8 @@ st.markdown(
     </style>
 
     <div class='info-box'>
-        <div class='info-title'>🌾 Smart Crop Predictor – ML-Powered Yield Estimator</div>
-        <p>Welcome to <b class='highlight'>Smart Crop Predictor</b>, an advanced <b>Machine Learning (ML)</b> application designed to help farmers, researchers, and agronomists make data-driven crop yield predictions.</p>
+        <div class='info-title'>🌾 Crop Yield Predictor – ML-Powered Yield Estimator</div>
+        <p>Welcome to <b class='highlight'>Crop Yield Predictor</b>, an advanced <b>Machine Learning (ML)</b> application designed to help farmers, researchers, and agronomists make data-driven crop yield predictions.</p>
         <div class='info-section'>🚀 Key Features</div>
         <ul class='info-list'>
             <li>✅ <b>State & District:</b> Location-based crop productivity insights.</li>
