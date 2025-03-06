@@ -279,4 +279,4 @@ if st.button('🚜 Predict Crop Yield', key="predict_main"):
 
 
 # Footer
-st.markdown("<p style='text-align:center; color:#888888; margin-top:30px;'>🌱 Powered by RJHV</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:#888888; margin-top:30px;'>🌱 Developed by RJHV</p>", unsafe_allow_html=True)
