@@ -226,7 +226,21 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
+# Function to generate recommendations based on predicted yield
+def get_recommendations(predicted_yield, crop):
+    """
+    Generate recommendations based on predicted crop yield.
+    """
+    if predicted_yield < 2:
+        recommendation = f"💧 Watering and fertilization might be required for {crop} to boost yield."
+    elif predicted_yield < 4:
+        recommendation = f"🌱 {crop} yield is average. Ensure proper irrigation and pest control."
+    elif predicted_yield < 6:
+        recommendation = f"🌾 Great yield for {crop}. Maintain current agricultural practices."
+    else:
+        recommendation = f"🚜 Excellent yield for {crop}. Consider optimizing harvesting and distribution."
+    
+    return recommendation
 # Sidebar for Inputs
 st.sidebar.header("📍 Location & Season")
 state = st.sidebar.selectbox("State", states)
