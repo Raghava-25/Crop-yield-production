@@ -276,7 +276,14 @@ if st.button('🚜 Predict Crop Yield', key="predict_main"):
             🌾 Estimated Crop Yield: <b>{prediction[0]:.2f}</b> Tons
         </div>
     """, unsafe_allow_html=True)
-
+# Display Recommendations
+    recommendations = get_recommendations(predicted_yield, crop)
+    st.markdown(f"""
+        <div class='recommendation-box'>
+            <h4>🌱 Recommended Actions:</h4>
+            <p>{recommendations}</p>
+        </div>
+    """, unsafe_allow_html=True)
 
 # Footer
 st.markdown("<p style='text-align:center; color:#888888; margin-top:30px;'>🌱 Developed by RJHV © 2025</p>", unsafe_allow_html=True)
