@@ -284,6 +284,7 @@ if st.button('🚜 Predict Crop Yield', key="predict_main"):
     with st.spinner("Predicting... Please wait ⏳"):
         time.sleep(1)  # Simulate processing time
         prediction = model.predict(input_data)
+        predicted_yield = prediction[0]
 
     st.markdown(f"""
         <div class='prediction-box'>
