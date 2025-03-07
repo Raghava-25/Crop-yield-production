@@ -246,15 +246,15 @@ st.sidebar.header("📍 Location & Season")
 state = st.sidebar.selectbox("State", states)
 district = st.sidebar.selectbox("District", district_map[state])
 season = st.sidebar.selectbox("Season", seasons)
-crop_year = st.sidebar.number_input("Crop Year", min_value=2000, max_value=3000, value=2026, step=1)
+crop_year = st.sidebar.number_input("Crop Year", min_value=2000, max_value=3000, value=2024, step=1)
 
 st.sidebar.header("🌾 Crop Selection")
 crop = st.sidebar.selectbox("Select Crop", crops)
 
 st.sidebar.header("🌦 Environmental Factors")
-temperature = st.sidebar.slider('Temperature (°C)', 0.0, 50.0, 25.0, step=0.1)
-humidity = st.sidebar.slider('Humidity (%)', 0.0, 100.0, 60.0, step=0.1)
-soil_moisture = st.sidebar.slider('Soil Moisture (%)', 20.0, 100.0, 50.0, step=0.1)
+temperature = st.sidebar.slider('Temperature (°C)', 0.0, 30.0, 25.0, step=0.1)
+humidity = st.sidebar.slider('Humidity (%)', 0.0, 100.0, 40.0, step=0.1)
+soil_moisture = st.sidebar.slider('Soil Moisture (%)', 20.0, 100.0, 20.0, step=0.1)
 area = st.sidebar.number_input('Area (acres)', min_value=0.5, max_value=1000.0, value=4.0, step=0.1)
 
 # Display Selected Inputs
